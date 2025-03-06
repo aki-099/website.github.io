@@ -1,0 +1,56 @@
+/* ページ全体の基本スタイル設定 */
+body {
+    margin: 0;
+    padding: 0;
+    /* 背景にグラデーションを設定 */
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* コンテナのスタイル */
+  .container {
+    text-align: center;
+    padding: 20px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* フェードインアニメーション */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* ボタンのスタイル */
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #764ba2;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  /* ボタンホバー時のスタイル変更 */
+  button:hover {
+    background: #764ba2;
+    color: #fff;
+  }
+  
+  /* 初期状態で情報エリアを非表示にする */
+  #info {
+    display: none;
+    margin-top: 20px;
+  }
+  
